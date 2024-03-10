@@ -29,3 +29,24 @@ df.shape
 (51490, 61)</br>
 
 parameter_URL : https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.shape.html#pandas.DataFrame.shape
+
+### 전체 컬럼을 출력하라
+```python
+df.columns
+df.columns[n-1]   #n번째 컬럼의 데이터 타입을 확인하라
+```
+Index(['gameId', 'creationTime', 'gameDuration', 'seasonId', 'winner',
+       'firstBlood', 'firstTower', 'firstInhibitor', 'firstBaron',
+       'firstDragon', 'firstRiftHerald', 't1_champ1id', 't1_champ1_sum1'],
+      dtype='object')
+### 데이터셋의 인덱스를 출력하라
+```python
+df.index
+```
+RangeIndex(start=0, stop=51490, step=1)(시작 : 0, 끝 : 51490, 단계 = 1)
+
+### 6번째 컬럼의 3번째 값은 무엇인가?
+```python
+df.iloc[2,5]  #df.iloc[row , column]
+```
+
